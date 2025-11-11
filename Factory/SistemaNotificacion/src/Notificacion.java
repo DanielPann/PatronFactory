@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-
-class Notificacion {
-
+public interface Notificacion {
+    void send(String message);
 }

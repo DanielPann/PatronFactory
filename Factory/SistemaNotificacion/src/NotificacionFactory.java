@@ -1,10 +1,10 @@
 public class NotificacionFactory {
-   public Notificacion createNotificacion(String type){
+   public static Notificacion createNotificacion(String type){
     Notificacion notificacion = null;
-    if (type.equals("sms")){
+    if (type.equals("SMS")){
         notificacion = new SmsNotificacion();
     } else if (type.equals("Email")){
-        notificacion = new EmailNotificaion();
+        notificacion = new EmailNotificacion();
     } else if (type.equals("Whatsapp")){
         notificacion = new WhatsNotificacion();
     }
